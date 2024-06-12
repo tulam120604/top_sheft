@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <title>Shops</title>
+</head>
+<style>
+    .hidden_scroll_x::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+
+<body class="font-lexend overflow-x-hidden">
+    <!-- header -->
+    <header>
+        <!-- top header -->
+        <div
+            class="w-full bg-[#05422c] lg:h-[37px] mb:h-[34px] *:text-white flex justify-center items-center *:lg:text-sm *:mb:text-xs gap-x-4">
+            <span class="opacity-75 lg:w-auto mb:w-[266px] mb:truncate">LIMITED OFFER: 30% OFF. Use RABBIT30 at
+                Checkout.</span>
+            <span>23 : 15 : 00</span>
+        </div>
+
+        <!-- logo, search and cart -->
+        <div class="w-full flex justify-center items-center border-b">
+
+            <div
+                class="container w-[1440px] lg:h-[76px] mb:h-[56px] flex justify-between *:flex *:items-center items-center">
+                <!-- icon menu -->
+                <div class="lg:hidden mb:block translate-x-[23px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-menu">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </div>
+                <img class="lg:translate-x-[64px] mb:translate-x-[-11.5px] lg:w-[167px] lg:h-[40px] mb:w-[119px] mb:h-[28px]"
+                    src="../Images/logo.png" alt="">
+
+                <!-- form desktop -->
+                <div class="mb:hidden lg:block *:h-[48px]">
+                    <form class="w-[456px] flex *:h-[48px] justify-between">
+                        <input type="text" class="border rounded-full w-[400px] px-6" placeholder="Search">
+                        <button class="rounded-[50%] bg-[#17af26] w-[48px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 text-white mx-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="lg:gap-x-6 mb:gap-x-4 lg:-translate-x-[60px] mb:-translate-x-[20px]">
+                    <span class="text-sm">Your Account</span>
+                    |
+                    <button class="h-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 w-[24px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                        <span
+                            class="absolute bg-red-500 top-2 rounded-[50%] w-[16px] h-[16px] text-xs text-white">1</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <div class="w-full mb:hidden lg:block">
+            <div class="w-full flex justify-center items-center *:flex *:justify-center">
+                <div class="gap-x-[49.5px] h-[56px] items-center">
+                    <a href="../src/products.html">Shop All</a>
+                    <a href="">Flower</a>
+                    <a href="">Edibles</a>
+                    <a href="">Concentrates</a>
+                    <a href="">Mushrooms</a>
+                    <a href="">Promotions/Bundles</a>
+                    <a href="">Support</a>
+                    <a href="">Rewards</a>
+                    <a href="">Blog</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- form mobile -->
+        <div class="w-full *:h-[58px] lg:hidden mb:block w-full">
+            <form class="flex *:h-[36px] justify-center items-center gap-x-3">
+                <input type="text" class="border rounded-full w-[298px] px-5" placeholder="Search">
+                <button class="rounded-[50%] bg-[#17af26] w-[36px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-white mx-auto">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <!-- service -->
+        <div class="w-full bg-[#F2F6F4]">
+            <div
+                class="container mx-auto lg:w-[1320px] mb:w-[342px] lg:py-6 mb:py-4 flex *:lg:w-[394.67px] *:mb:w-[86px] *:lg:h-[48px] items-center justify-between">
+                <!-- item -->
+                <div class="flex lg:flex-row mb:flex-col mb:items-start lg:items-center lg:gap-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-truck bg-white lg:w-[48px] lg:h-[48px] lg:p-[11px] mb:w-[32px] mb:h-[32px] mb:p-[7px] rounded-[50%]">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                        <path d="M15 18H9" />
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                        <circle cx="17" cy="18" r="2" />
+                        <circle cx="7" cy="18" r="2" />
+                    </svg>
+                    <strong class="lg:text-xl mb:text-sm">Reliable Shipping</strong>
+                </div>
+                |
+                <!-- item -->
+                <div class="flex lg:flex-row mb:flex-col mb:items-start lg:items-center lg:gap-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-truck bg-white lg:w-[48px] lg:h-[48px] lg:p-[11px] mb:w-[32px] mb:h-[32px] mb:p-[7px] rounded-[50%]">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                        <path d="M15 18H9" />
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                        <circle cx="17" cy="18" r="2" />
+                        <circle cx="7" cy="18" r="2" />
+                    </svg>
+                    <strong class="lg:text-xl mb:text-sm">Reliable Shipping</strong>
+                </div>
+                |
+                <!-- item -->
+                <div class="flex lg:flex-row mb:flex-col mb:items-start lg:items-center lg:gap-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-truck bg-white lg:w-[48px] lg:h-[48px] lg:p-[11px] mb:w-[32px] mb:h-[32px] mb:p-[7px] rounded-[50%]">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                        <path d="M15 18H9" />
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                        <circle cx="17" cy="18" r="2" />
+                        <circle cx="7" cy="18" r="2" />
+                    </svg>
+                    <strong class="lg:text-xl mb:text-sm">Reliable Shipping</strong>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- ********* -->
+    <!-- MAIN -->
+    <div class="w-full py-10 border">
+        <div
+            class="lg:container lg:mx-auto lg:w-[1320px] mb:w-full grid lg:grid-cols-[304px_980px] mb:grid-cols-[100%] *:w-full justify-between">
+            <!-- filter -->
+            <div class="lg:block hidden py-3">
+                <span class="lg:text-xl">Filters</span>
+                <!-- category -->
+                <section class="flex flex-col pt-[47px] pb-6">
+                    <span class="text-[#717378] text-xs tracking-[1px]">PRODUCT CATEGORY</span>
+                    <ul class="*:gap-3 py-2.5 *:flex *:items-center *:my-[9px] border-b">
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale <span
+                                class="text-[#9D9EA2] font-light">12</span></li>
+                    </ul>
+                </section>
+                <!-- price -->
+                <section class="flex flex-col pr-7 pb-6 border-b">
+                    <span class="text-[#717378] text-xs tracking-[1px]">FILTER BY PRICE</span>
+                    <div class="flex justify-between *:px-2.5 my-5 *:py-1 *:bg-[#F4F4F4] *:rounded-[100px] *:text-xs">
+                        <div>$0</div>
+                        <div>$50.000.00</div>
+                    </div>
+                    <input type="range" class="h-[2px] bg-black">
+                    <button class="w-[103px] mt-6 h-[40px] rounded-[1000px] bg-[#17AF26] text-white">Apply</button>
+                </section>
+                <!-- order -->
+                <section class="flex flex-col py-6">
+                    <span class="text-[#717378] text-xs tracking-[1px]">ORDER BY</span>
+                    <ul class="*:gap-3 py-2 *:flex *:items-center *:my-[9px] border-b">
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale</li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale</li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale</li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale</li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale</li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale</li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale</li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale</li>
+                        <li> <input class="w-[20px] h-[20px]" type="radio"> Sale</li>
+                    </ul>
+                </section>
+                <!-- review -->
+                <section class="flex flex-col">
+                    <span class="text-[#717378] text-xs tracking-[1px]">FILTER BY REVIEWS</span>
+                    <ul class="*:gap-3 py-2 *:flex *:items-center *:my-[9px] border-b">
+                        <li> <input class="w-[20px] h-[20px]" type="checkbox">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li> <input class="w-[20px] h-[20px]" type="checkbox">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li> <input class="w-[20px] h-[20px]" type="checkbox">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li> <input class="w-[20px] h-[20px]" type="checkbox">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li> <input class="w-[20px] h-[20px]" type="checkbox">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li> <input class="w-[20px] h-[20px]" type="checkbox">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li> <input class="w-[20px] h-[20px]" type="checkbox">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li> <input class="w-[20px] h-[20px]" type="checkbox">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li> <input class="w-[20px] h-[20px]" type="checkbox">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- product -->
+            <div class="w-full flex flex-col mb:items-center lg:items-start">
+                <div class="mb:w-[342px] lg:w-full flex justify-between items-center border-b lg:pb-6 mb:pb-4">
+                    <strong class="lg:text-2xl mb:text-base font-normal">Shop</strong>
+                    <div class="flex gap-x-[10px]">
+                        <div
+                            class="relative lg:hidden group w-[78px] flex place-items-center h-[34px] border rounded-[100px] px-[14px] cursor-pointer border-gray-300 text-gray-700 text-xs">
+                            Filter <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chevron-down group-hover:rotate-180 duration-300">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                            <ul
+                                class="absolute hidden group-hover:block top-full bg-white shadow-xl py-2 px-3 *:my-2 *:whitespace-nowrap w-[50vw]">
+                                <li>John Mayer</li>
+                                <li>John Mayer</li>
+                                <li>John Mayer</li>
+                                <li>John Mayer</li>
+                                <li>John Mayer</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="relative group flex place-items-center h-[34px] border rounded-[100px] px-[14px] cursor-pointer border-gray-300 text-gray-700 text-xs">
+                            Short By Lates <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-chevron-down group-hover:rotate-180 duration-300">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                            <ul
+                                class="absolute hidden group-hover:block top-full right-0 bg-white shadow-xl py-2 px-3 *:my-2 *:whitespace-nowrap w-[50vw]">
+                                <li>John Mayer</li>
+                                <li>John Mayer</li>
+                                <li>John Mayer</li>
+                                <li>John Mayer</li>
+                                <li>John Mayer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- text -->
+                <div class="lg:w-[864px] mb:w-[342px] lg:mt-8 lg:pb-8 mb:pb-6 mb:mt-6">
+                    <span class="lg:text-xl mb:text-base text-[#17AF26]">Cannabis</span>
+                    <p class="text-[#717378] mt-4 lg:text-base mb:text-sm">Here at WestCoastSupply’s “ cannabis
+                        section, we showcase the best Indica, Hybrid, and Sativa medical cannabis strain selections at
+                        the best prices online. You can be assured that all our strains go through a strict screening
+                        process to ensure that all your cannabis needs are top-quality. All of our flowers are sourced
+                        from reputable growers, based in British Columbia, Canada. We have hige grade selection comes
+                        from growers that produce AAAA+ quality cannabis flowers and have many years of experience in
+                        the cannabis industry. You are guaranteed to be receiving high-quality flowers at the best
+                        prices online with our unbeatable sales!</p>
+                </div>
+
+                <!-- top best selling -->
+                <div class="bg-[#F2F6F4] w-full lg:rounded-2xl py-7 lg:px-8">
+                    <strong class="lg:text-2xl mb:text-lg tracking-[-0.5px] mb:mx-11 lg:mx-0 font-medium">Top
+                        Selling</strong>
+                    <div class="w-full flex justify-center overflow-x-scroll hidden_scroll_x">
+                        <div
+                            class="lg:w-auto mb:w-[342px] grid grid-flow-col *:w-[282.67px] *:lg:h-[560px] *:mb:h-[487px] lg:pt-[27px] mb:pt-6 gap-x-[32px]">
+                            <!-- item 1 -->
+                            <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                                <!-- img -->
+                                <div
+                                    class="relative group w-full lg:h-[240px] mb:h-[180px] bg-white rounded-xl grid place-items-center">
+                                    <img class="lg:w-[164px] mb:w-[120px] z-[2] lg:h-[164px] mb:h-[120px]"
+                                        src="../Images/img_product.png" alt="">
+                                    <button
+                                        class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                        Of Stock</button>
+
+                                    <div
+                                        class="lg:hidden block absolute w-[150%] h-full z-[0] bg-[#F2F6F4] rounded-[70%] top-3/4">
+                                    </div>
+                                </div>
+                                <!-- about -->
+                                <div
+                                    class="w-full z-[2] lg:h-[304px] mb:h-[283px] flex flex-col justify-between items-center">
+                                    <strong
+                                        class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                                    <strong
+                                        class="lg:text-lg text-center mb:text-base font-normal text-[#1A1E26] my-1">2 Oz
+                                        Deal Watermelon
+                                        Zkittles + Purple
+                                        Gushers</strong>
+                                    <section
+                                        class="lg:w-[163px] mb:w-[131px] mb:mt-[8px] lg:mt-0 h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                        <div class="flex items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-star">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                            </svg>
+                                            <strong>4.6/5</strong>
+                                        </div>
+                                        <div class="flex gap-x-2">
+                                            <strong>135</strong>
+                                            <span class="text-[#C8C9CB]">Reviews</span>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="bg-[#F2F6F4] w-[92px] h-[28px] text-xs rounded grid place-items-center my-3">
+                                        Sativa 100%
+                                    </section>
+                                    <div class="flex my-2 mb:text-sm lg:text-base ">
+                                        <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                                    </div>
+                                    <div
+                                        class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                        <button>28g</button>
+                                        <button>1/2lb</button>
+                                        <button>1/4lb</button>
+                                    </div>
+                                    <button
+                                        class="bg-[#17AF26] w-[128px] h-[40px] grid place-items-center rounded-[100px] text-sm text-white">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- item 1 -->
+                            <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                                <!-- img -->
+                                <div
+                                    class="relative group w-full lg:h-[240px] mb:h-[180px] bg-white rounded-xl grid place-items-center">
+                                    <img class="lg:w-[164px] mb:w-[120px] z-[2] lg:h-[164px] mb:h-[120px]"
+                                        src="../Images/img_product.png" alt="">
+                                    <button
+                                        class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                        Of Stock</button>
+
+                                    <div
+                                        class="lg:hidden block absolute w-[150%] h-full z-[0] bg-[#F2F6F4] rounded-[70%] top-3/4">
+                                    </div>
+                                </div>
+                                <!-- about -->
+                                <div
+                                    class="w-full z-[2] lg:h-[304px] mb:h-[283px] flex flex-col justify-between items-center">
+                                    <strong
+                                        class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                                    <strong
+                                        class="lg:text-lg text-center mb:text-base font-normal text-[#1A1E26] my-1">2 Oz
+                                        Deal Watermelon
+                                        Zkittles + Purple
+                                        Gushers</strong>
+                                    <section
+                                        class="lg:w-[163px] mb:w-[131px] mb:mt-[8px] lg:mt-0 h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                        <div class="flex items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-star">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                            </svg>
+                                            <strong>4.6/5</strong>
+                                        </div>
+                                        <div class="flex gap-x-2">
+                                            <strong>135</strong>
+                                            <span class="text-[#C8C9CB]">Reviews</span>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="bg-[#F2F6F4] w-[92px] h-[28px] text-xs rounded grid place-items-center my-3">
+                                        Sativa 100%
+                                    </section>
+                                    <div class="flex my-2 mb:text-sm lg:text-base ">
+                                        <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                                    </div>
+                                    <div
+                                        class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                        <button>28g</button>
+                                        <button>1/2lb</button>
+                                        <button>1/4lb</button>
+                                    </div>
+                                    <button
+                                        class="bg-[#17AF26] w-[128px] h-[40px] grid place-items-center rounded-[100px] text-sm text-white">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- item 1 -->
+                            <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                                <!-- img -->
+                                <div
+                                    class="relative group w-full lg:h-[240px] mb:h-[180px] bg-white rounded-xl grid place-items-center">
+                                    <img class="lg:w-[164px] mb:w-[120px] z-[2] lg:h-[164px] mb:h-[120px]"
+                                        src="../Images/img_product.png" alt="">
+                                    <button
+                                        class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                        Of Stock</button>
+
+                                    <div
+                                        class="lg:hidden block absolute w-[150%] h-full z-[0] bg-[#F2F6F4] rounded-[70%] top-3/4">
+                                    </div>
+                                </div>
+                                <!-- about -->
+                                <div
+                                    class="w-full z-[2] lg:h-[304px] mb:h-[283px] flex flex-col justify-between items-center">
+                                    <strong
+                                        class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                                    <strong
+                                        class="lg:text-lg text-center mb:text-base font-normal text-[#1A1E26] my-1">2 Oz
+                                        Deal Watermelon
+                                        Zkittles + Purple
+                                        Gushers</strong>
+                                    <section
+                                        class="lg:w-[163px] mb:w-[131px] mb:mt-[8px] lg:mt-0 h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                        <div class="flex items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-star">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                            </svg>
+                                            <strong>4.6/5</strong>
+                                        </div>
+                                        <div class="flex gap-x-2">
+                                            <strong>135</strong>
+                                            <span class="text-[#C8C9CB]">Reviews</span>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="bg-[#F2F6F4] w-[92px] h-[28px] text-xs rounded grid place-items-center my-3">
+                                        Sativa 100%
+                                    </section>
+                                    <div class="flex my-2 mb:text-sm lg:text-base ">
+                                        <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                                    </div>
+                                    <div
+                                        class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                        <button>28g</button>
+                                        <button>1/2lb</button>
+                                        <button>1/4lb</button>
+                                    </div>
+                                    <button
+                                        class="bg-[#17AF26] w-[128px] h-[40px] grid place-items-center rounded-[100px] text-sm text-white">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- item 1 -->
+                            <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                                <!-- img -->
+                                <div
+                                    class="relative group w-full lg:h-[240px] mb:h-[180px] bg-white rounded-xl grid place-items-center">
+                                    <img class="lg:w-[164px] mb:w-[120px] z-[2] lg:h-[164px] mb:h-[120px]"
+                                        src="../Images/img_product.png" alt="">
+                                    <button
+                                        class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                        Of Stock</button>
+
+                                    <div
+                                        class="lg:hidden block absolute w-[150%] h-full z-[0] bg-[#F2F6F4] rounded-[70%] top-3/4">
+                                    </div>
+                                </div>
+                                <!-- about -->
+                                <div
+                                    class="w-full z-[2] lg:h-[304px] mb:h-[283px] flex flex-col justify-between items-center">
+                                    <strong
+                                        class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                                    <strong
+                                        class="lg:text-lg text-center mb:text-base font-normal text-[#1A1E26] my-1">2 Oz
+                                        Deal Watermelon
+                                        Zkittles + Purple
+                                        Gushers</strong>
+                                    <section
+                                        class="lg:w-[163px] mb:w-[131px] mb:mt-[8px] lg:mt-0 h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                        <div class="flex items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-star">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                            </svg>
+                                            <strong>4.6/5</strong>
+                                        </div>
+                                        <div class="flex gap-x-2">
+                                            <strong>135</strong>
+                                            <span class="text-[#C8C9CB]">Reviews</span>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="bg-[#F2F6F4] w-[92px] h-[28px] text-xs rounded grid place-items-center my-3">
+                                        Sativa 100%
+                                    </section>
+                                    <div class="flex my-2 mb:text-sm lg:text-base ">
+                                        <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                                    </div>
+                                    <div
+                                        class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                        <button>28g</button>
+                                        <button>1/2lb</button>
+                                        <button>1/4lb</button>
+                                    </div>
+                                    <button
+                                        class="bg-[#17AF26] w-[128px] h-[40px] grid place-items-center rounded-[100px] text-sm text-white">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- item 1 -->
+                            <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                                <!-- img -->
+                                <div
+                                    class="relative group w-full lg:h-[240px] mb:h-[180px] bg-white rounded-xl grid place-items-center">
+                                    <img class="lg:w-[164px] mb:w-[120px] z-[2] lg:h-[164px] mb:h-[120px]"
+                                        src="../Images/img_product.png" alt="">
+                                    <button
+                                        class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                        Of Stock</button>
+
+                                    <div
+                                        class="lg:hidden block absolute w-[150%] h-full z-[0] bg-[#F2F6F4] rounded-[70%] top-3/4">
+                                    </div>
+                                </div>
+                                <!-- about -->
+                                <div
+                                    class="w-full z-[2] lg:h-[304px] mb:h-[283px] flex flex-col justify-between items-center">
+                                    <strong
+                                        class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                                    <strong
+                                        class="lg:text-lg text-center mb:text-base font-normal text-[#1A1E26] my-1">2 Oz
+                                        Deal Watermelon
+                                        Zkittles + Purple
+                                        Gushers</strong>
+                                    <section
+                                        class="lg:w-[163px] mb:w-[131px] mb:mt-[8px] lg:mt-0 h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                        <div class="flex items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-star">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                            </svg>
+                                            <strong>4.6/5</strong>
+                                        </div>
+                                        <div class="flex gap-x-2">
+                                            <strong>135</strong>
+                                            <span class="text-[#C8C9CB]">Reviews</span>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="bg-[#F2F6F4] w-[92px] h-[28px] text-xs rounded grid place-items-center my-3">
+                                        Sativa 100%
+                                    </section>
+                                    <div class="flex my-2 mb:text-sm lg:text-base ">
+                                        <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                                    </div>
+                                    <div
+                                        class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                        <button>28g</button>
+                                        <button>1/2lb</button>
+                                        <button>1/4lb</button>
+                                    </div>
+                                    <button
+                                        class="bg-[#17AF26] w-[128px] h-[40px] grid place-items-center rounded-[100px] text-sm text-white">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- render products -->
+                <div
+                    class="lg:w-full mb:w-[342px] md:w-[95vw] grid my-8 lg:grid-cols-[304px_304px_304px] mb:grid-cols-[159px_159px] *:lg:h-[560px] *:mb:h-[491px] gap-y-8 text-center justify-between">
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- contentratest -->
+                <div
+                    class="lg:w-full mb:w-full rounded-3xl lg:my-8 lg:h-[460px] mb:h-[671px] bg-gradient-to-r from-[#05422C] lg:pl-[56px] lg:pr-[88px] to-[#648A7C] mb:p-6 flex lg:flex-row mb:flex-col items-center justify-between">
+                    <!-- left -->
+                    <div class="lg:w-[341px] lg:h-[348px] mb:h-[239px] text-white flex flex-col justify-between">
+                        <span
+                            class="lg:text-sm mb:text-xs opacity-30 lg:tracking-[4px] mb:tracking-[2px]">CONCENTRATES</span>
+                        <strong
+                            class="lg:text-[32px] mb:text-2xl font-semibold lg:tracking-[-1px] mb:tracking-[-0.5px]">Mix
+                            And Match Shatter/Budder 28g (4 X 7G)</strong>
+                        <section class="w-[163px] h-[21px] *:text-sm flex justify-between items-center">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <strong>4.6/5</strong>
+                            </div>
+                            |
+                            <div class="flex gap-x-2">
+                                <strong>135</strong>
+                                <span class="text-[#C8C9CB]">Reviews</span>
+                            </div>
+                        </section>
+                        <div class="flex *:text-xs *:py-[7px] *:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                            <button>28g</button>
+                            <button>1/2lb</button>
+                            <button>1/4lb</button>
+                        </div>
+                        <div class="flex justify-between">
+                            <button
+                                class="bg-[#17AF26] lg:w-[172px] lg:h-[56px] mb:w-[128px] mb:h-[40px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                            <span class="font-normal lg:text-xl mb:text-lg text-[#F2BC1B]">$102.00 <del
+                                    class="lg:text-sm mb:text-mb text-white">$200.00</del></span>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div
+                        class="relative lg:w-[373px] mb:w-[342px] h-[344px] flex flex-col items-center justify-between">
+                        <div class="w-full h-[322px] bg-[#ffffff12] grid place-items-center rounded-2xl">
+                            <img src="../Images/img_product.png" alt="">
+                        </div>
+                        <!-- *****  -->
+                        <div
+                            class="*:relative flex *:w-1.5 *:h-1.5 *:rounded-[50%] gap-x-2 *:after:content-[''] *:after:absolute *:after:-top-1/2 *:after:-left-1/2 *:after:rounded-[50%] *:after:bg-[#ffffff20]">
+                            <button class="bg-[#ffffff] after:w-3 after:h-3"></button>
+                            <button class="bg-[#ffffff20] hover:after:w-3 hover:after:h-3 hover:bg-white"></button>
+                            <button class="bg-[#ffffff20] hover:after:w-3 hover:after:h-3 hover:bg-white"></button>
+                            <button class="bg-[#ffffff20] hover:after:w-3 hover:after:h-3 hover:bg-white"></button>
+                            <button class="bg-[#ffffff20] hover:after:w-3 hover:after:h-3 hover:bg-white"></button>
+                        </div>
+
+                        <!-- back and next -->
+                        <div
+                            class="absolute top-1/2 -translate-y-full w-full flex justify-between *:w-7 *:h-7 *:rounded-[50%] *:bg-white *:grid *:place-items-center">
+                            <button class="-translate-x-1/2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-left">
+                                    <path d="m15 18-6-6 6-6" />
+                                </svg>
+                            </button>
+                            <button class="translate-x-1/2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- products -->
+                <div
+                    class="lg:w-full mb:w-[342px] md:w-[95vw] grid my-8 lg:grid-cols-[304px_304px_304px] mb:grid-cols-[159px_159px] *:lg:h-[560px] *:mb:h-[491px] gap-y-8 text-center justify-between">
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="flex flex-col justify-between overflow-hidden h-full rounded-xl">
+                        <!-- img -->
+                        <div
+                            class="relative group w-full lg:h-[240px] mb:h-[160px] bg-[#F4F4F4] rounded-lg grid place-items-center">
+                            <img class="lg:w-[164px] mb:w-[120px] lg:h-[164px] mb:h-[120px]"
+                                src="../Images/img_product.png" alt="">
+                            <button
+                                class="absolute scale-0 group-hover:scale-100 group-hover:translate-y-0 -translate-y-[200%] duration-200 z-[2] lg:w-[152px] mb:w-[136px] lg:h-[64px]  mb:h-[48px] rounded-[100px] border-none bg-[#1A1E2630] text-sm text-white backdrop-blur-md">Out
+                                Of Stock</button>
+                        </div>
+                        <!-- about -->
+                        <div class="w-full h-[304px] flex flex-col justify-between items-center">
+                            <strong
+                                class="uppercase font-light lg:text-sm mb:text-xs text-center text-[#9D9EA2]">flower</strong>
+                            <strong
+                                class="lg:text-lg lg:my-1 mb:y-2.5 text-center mb:text-base font-normal text-[#1A1E26]">2
+                                Oz
+                                Deal Watermelon
+                                Zkittles + Purple
+                                Gushers</strong>
+                            <section
+                                class="lg:w-[163px] mb:w-[131px] h-[21px] *:lg:text-sm *:mb:text-xs flex justify-between items-start">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-star">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    <strong>4.6/5</strong>
+                                </div>
+                                <div class="flex gap-x-2">
+                                    <strong>135</strong>
+                                    <span class="text-[#C8C9CB]">Reviews</span>
+                                </div>
+                            </section>
+                            <section
+                                class="bg-[#F2F6F4] lg:translate-y-0 mb:-translate-y-1 w-[92px] h-[28px] text-xs rounded grid place-items-center lg:my-3">
+                                Sativa 100%
+                            </section>
+                            <div class="flex lg:my-2 mb:mt-2 mb:text-sm lg:text-base ">
+                                <span class="text-[#EB2606]">$ 80.00</span><span>/ gram</span>
+                            </div>
+                            <div
+                                class="flex *:text-xs *:mb:px-2 *:lg:py-[7px] *:mb:py-1 *:lg:px-[10px] gap-x-2 my-3 *:border *:rounded">
+                                <button>28g</button>
+                                <button>1/2lb</button>
+                                <button>1/4lb</button>
+                            </div>
+                            <button
+                                class="bg-[#17AF26] lg:w-[128px] h-[40px] mb:w-[120px] grid place-items-center rounded-[100px] text-sm text-white">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- list page -->
+                <div
+                    class="w-full flex lg:flex-row mb:flex-col justify-between items-center pt-6 mb:gap-y-5 lg:gap-y-0">
+                    <!-- show page -->
+                    <span class="lg:w-auto mb:w-full text-[#717378] lg:text-sm mb:text-xs">Showing 1-30 of 393
+                        results</span>
+
+                    <!-- list page -->
+                    <div
+                        class="lg:w-auto mb:w-full flex items-center *:w-9 *:h-9 *:rounded-[50%] *:grid *:place-items-center gap-x-2.5">
+                        <button class="border">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-left">
+                                <path d="m15 18-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <!-- **** -->
+
+                        <button class="bg-[#F2F6F4]">1</button>
+                        <button class="hover:bg-[#f2f6f4]">2</button>
+                        <button class="hover:bg-[#f2f6f4]">3</button>
+                        <button class="hover:bg-[#f2f6f4]">4</button>
+                        <button class="hover:bg-[#f2f6f4]">...</button>
+                        <button class="hover:bg-[#f2f6f4]">55</button>
+
+                        <!-- **** -->
+                        <button class="border">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- END MAIN -->
+    <!-- ********* -->
+</body>
+
+</html>
