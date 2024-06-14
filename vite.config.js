@@ -12,4 +12,11 @@ export default defineConfig({
             },
         },
     },
+  resolve: {
+    alias: {
+      '@components': '/src/components',
+      '@utils': '/src/utils',
+      '@images': './Images', // Thay đổi đường dẫn tới thư mục ảnh của bạn
+    },
+  },
 });
